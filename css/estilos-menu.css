@@ -1,0 +1,126 @@
+.contenedor-menu{
+    background: rgba(34, 112, 147, .5);
+    width: 100%;
+    height: 43px;
+    position: absolute;
+    bottom: 1.2%;
+}
+
+header input {
+    display: none;
+}
+
+header label img {
+    display: none;
+    
+}
+
+.menu{
+    display: block;
+    float: right;
+}
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu a{
+    display: block;
+    padding: 11px 20px;
+    color: white;
+    text-decoration: none;
+}
+.menu a:hover {
+    background: rgba(0, 0, 0, .5);
+}
+
+.menu span {
+    display: block;
+    padding: 11px 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.menu span:hover {
+    background: rgba(0, 0, 0, .5);
+}
+
+.menu ul li ul {
+    display: none;
+    position: absolute;
+    background: rgba(34, 112, 147, 1);
+    
+}
+
+.menu ul li:hover ul {
+    display: block;
+    position: absolute;
+    background: rgba(34, 112, 147, 1);
+}
+.sub-menu img {
+    width: auto;
+    height: 1em;
+    margin-left: 2px
+}
+
+/* -------------------- Resolucion de móvil ------------------- */
+
+@media (max-width: 768px) {
+    
+    header label img{
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 13%;
+        background: rgba(34, 112, 147, .7);
+        padding-top: 3.5%;
+        padding-bottom: 3.5%;
+        right: 0%
+    }
+    .contenedor-menu {
+        display: none;
+        top: 100%;
+        background: #113849;
+    }
+    .menu {
+        float: none;
+        background: none;
+    }
+    .menu ul{
+        display: block;
+        position: absolute;
+        width: 100%;
+        background: rgba(34, 112, 147, 1);
+    }
+    
+    .menu a {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    
+    
+    .menu span{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    
+    .menu ul li ul {
+        background: rgba(0, 70, 100, 1);
+        position: relative;
+        width: 100%;
+        
+    }
+    .menu ul li ul li a{
+        padding-left: 30px
+    }
+
+    .menu ul li:hover ul {
+        position: relative;
+        display: none;
+        background: rgba(0, 70, 100, 1);
+    }
+    .sub-menu img {
+        position: absolute;
+        right: 2%;
+    }
+    
+
+}
